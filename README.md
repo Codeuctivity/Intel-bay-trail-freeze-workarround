@@ -1,5 +1,5 @@
 # Intel-bay-trail-freeze-workarround
-Script to deaktivate c6* states to prevent a baytrail with ubuntu 16.04 and 18.04
+Script to deactivate c6* states to prevent a baytrail with ubuntu 16.04, 18.04 and probably an other baytrail based linux that keeps freezing in cause of https://bugzilla.kernel.org/show_bug.cgi?id=109051#c434
 
 This fix164 should work with the following processors :
 
