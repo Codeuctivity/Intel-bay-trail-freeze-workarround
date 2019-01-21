@@ -1,4 +1,7 @@
 # Intel-bay-trail-freeze-workarround
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3429ae89d23a46c98f936934c46fe933)](https://app.codacy.com/app/stesee/Intel-bay-trail-freeze-workarround?utm_source=github.com&utm_medium=referral&utm_content=Codeuctivity/Intel-bay-trail-freeze-workarround&utm_campaign=Badge_Grade_Settings)
+
 Script to deactivate c6* states to prevent a freezing baytrail with ubuntu 16.04, 18.04 and probably any other linux running on baytrail that keeps freezing in cause of https://bugzilla.kernel.org/show_bug.cgi?id=109051#c434
 
 This fix164 should work with the following processors :
