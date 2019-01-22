@@ -28,8 +28,10 @@ Make sure it can run with following command
 ```shell
 sudo chmod 755 /usr/bin/c6off+c7on.sh
 ```
+
 Then create a file "/etc/systemd/system/cstatefix.service"
 with following contents:
+
 ```shell
     [Unit]
     Description=My script
@@ -40,13 +42,16 @@ with following contents:
     [Install]
     WantedBy=multi-user.target
 ```
+
 Then enable service with command
+
 ```shell
 systemctl enable cstatefix.service
 ```
 
 When you restart, use the info script to see if all is well.
 You should get output similar to this:
+
 ```shell
 username@host:~$ /usr/bin/cstateInfo.sh
 cpu0 State  Name  Disabled  Latency  Residency        Time     Usage
@@ -57,6 +62,7 @@ cpu0 State  Name  Disabled  Latency  Residency        Time     Usage
          4  C7           0     1200       4000  3024534798    419933
          5  C7S          0    10000      20000  3159737561    110653
 ```
+
 ..with 1's in Disabled row for C6*, and the news C7 states available.
 
 References:
